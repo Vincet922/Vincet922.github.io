@@ -1,0 +1,31 @@
+body {
+	background-color: #5D50CD;
+	background-image: url(../%E5%8F%AF%E7%94%A8%E5%9B%BE/%E6%8F%92%E5%9C%963.png);
+}
+#title-1 {
+	text-shadow: 2px 1px 2px #FF0004;
+	color: #FFFD00;
+	text-align: center;
+	width: auto;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	position: relative;
+	opacity: 1;
+	visibility: visible;
+	overflow-y: auto;
+	clear: both;
+	border: 8px solid #F9588A;
+	border-radius: 0px;
+	background-color: #78D2FF;
+	margin-top: 271px;
+	margin-right: 271px;
+	margin-bottom: 271px;
+	margin-left: 271px;
+	/* [disabled]top: 271.5px; */
+	/* [disabled]bottom: 271.5px; */
+	/* [disabled]left: 444px; */
+	-webkit-box-shadow: 10px 11px 15px;
+	box-shadow: 10px 11px 15px;
+}
