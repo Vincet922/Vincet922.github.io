@@ -1,0 +1,64 @@
+
+
+.table-of-contents li a {
+  text-decoration: none;
+  color: #c8c8c8;
+}
+
+.table-of-contents li a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.main-content {
+  display: inline-block;
+  margin: 20px;
+  margin-right: 16%;
+}
+
+
+.toc {
+  width: 15%; /* Fixed width for the table of contents */
+  padding: 15px;
+  position: fixed; /* Make the TOC fixed */
+  height: 100%; /* Full height */
+  overflow-y: auto; /* Add a scrollbar if the content exceeds the height */
+  height: 85%;
+  z-index: 9999;
+}
+.toc::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+
+.toc::-webkit-scrollbar-thumb {
+  background-color: rgba(200, 200, 200, 0.5);
+  border-radius: 3px;
+}
+
+.toc:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(200, 200, 200, 1);
+}
+.content {
+  margin-left: 20%; /* Add a left margin equal to the TOC's width */
+  padding: 35px;
+  border: 1px solid #c8c8c8;
+
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.uftpic{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
+
+.table-of-contents li {
+  margin-bottom: 5px;
+}
