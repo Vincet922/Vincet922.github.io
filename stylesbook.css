@@ -69,7 +69,10 @@
 	  padding: 0px;
 	  width: 100%;
 	  border: 0px solid #c8c8c8;
+	  background-color: #01282A;
+	  box-shadow: none;
   }
+
   .main-content{
 margin: 0px;
   margin-right: 0%;
