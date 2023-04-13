@@ -7,6 +7,8 @@
 <meta name="keywords" content="张祥前,统一场论,外星人,果克星球,外星人绑架,科技,物理,超前理论,时间空间的本质,科学家,民间科学家,农民科学家,外星球, Zhang Xiangqian, Unification Field Theory, aliens, Goke planet, alien abduction, technology, physics, advanced theory, nature of space-time, scientist, folk scientist, farmer scientist, extraterrestrial">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="stylesbook.css">
+  <link rel="stylesheet" href="styles2.css">
+  <link rel="stylesheet" href="mobile.css">
   <style>
 p{
 font-size: 18px;
@@ -14,52 +16,69 @@ margin-bottom: 20px;
 line-height: 1.6;
 animation: fadeIn 1s;
 color: #c8c8c8;
-background-color: #1b3e40;
+background-color: #4c1c34;
 text-align: left;
 }
 
 @media (max-width: 767px) {
 
   p{
-	  background-color: #01282A;
+	  background-color: #33011a;
   }
 }
   </style>
-  <title>页面标题 - 张祥前统一场论</title>
+  <title>统一场论正文</title>
 </head>
 <body>
-  <header>
+  <header class="fixed-menu">
     <div class="header-left">
-      <a href="index.html" class="logo">张祥前统一场论</a>
+      <a href="index.html" class="logo"><strong>张祥前</br>统一场论</strong></a>
       <nav>
         <ul class="nav-menu">
-			<li>
-			  <a href="theory.html">统一场论</a>
-			  <ul class="dropdown">
-				<li><a href="overview.html">统一场论正文（重要）</a></li>
-				<li><a href="lorentz.html">用时间的物理定义解释光速不变</a></li>
-				<li><a href="spacetime.html">证明空间的波动性</a></li>
-				<li><a href="gravity.html">揭开万有引力的本质之谜</a></li>
-				<li><a href="electromagnetism.html">揭开电荷、电磁场的本质之谜</a></li>
-				<li><a href="light.html">揭秘光的本质</a></li>
-				<li><a href="math.html">张祥前的数学理论</a></li>
-				<li><a href="concise.html">张祥前统一场论简洁版</a></li>
-			  </ul>
-			</li>
-			<li><a href="biography.html">张祥前生平自述</a></li>
-			<li><a href="donation.html">捐款</a></li>
-			<li><a href="works.html">更多作品</a></li>
-			<li><a href="contact.html">联系张祥前</a></li>
+          <li>
+            <a href="theory.html">统一场论</a>
+            <ul class="dropdown">
+              <li><a href="overview.html">统一场论正文（重要）</a></li>
+              <li><a href="lorentz.html">用时间的物理定义解释光速不变</a></li>
+              <li><a href="spacetime.html">证明空间的波动性</a></li>
+              <li><a href="gravity.html">揭开万有引力的本质之谜</a></li>
+              <li><a href="electromagnetism.html">揭开电荷、电磁场的本质之谜</a></li>
+              <li><a href="light.html">揭秘光的本质</a></li>
+              <li><a href="math.html">张祥前的数学理论</a></li>
+            </ul>
+          </li>
+          <li><a href="biography.html">作者简介</a></li>
+		  <li><a href="interview.html">张祥前采访</a></li>
+          <li><a href="donation.html">捐款</a></li>
+          <li><a href="works.html">更多作品</a></li>
+          <li><a href="contact.html">联系张祥前</a></li>
         </ul>
       </nav>
-    </div>.
-        </ul>
-      </nav>
+      <span class="hamburger">&#9776;</span>
     </div>
     <div class="header-right">
     </div>
   </header>
-
+  <div class="mobile-menu">
+    <span class="close-btn">&times;</span>
+    <nav>
+      <ul class="nav-menu-mobile">
+            <li><a href="theory.html">统一场论精简版</a></li>
+              <li><a href="overview.html">统一场论正文（重要）</a></li>
+              <li><a href="lorentz.html">用时间的物理定义解释光速不变</a></li>
+              <li><a href="spacetime.html">证明空间的波动性</a></li>
+              <li><a href="gravity.html">揭开万有引力的本质之谜</a></li>
+              <li><a href="electromagnetism.html">揭开电荷、电磁场的本质之谜</a></li>
+          <li><a href="light.html">揭秘光的本质</a></li>
+          <li><a href="math.html">张祥前的数学理论</a></li>
+          <li><a href="biography.html">作者简介</a></li>
+		  <li><a href="interview.html">张祥前采访</a></li>
+          <li><a href="donation.html">捐款</a></li>
+          <li><a href="works.html">更多作品</a></li>
+          <li><a href="contact.html">联系张祥前</a></li>
+      </ul>
+    </nav>
+  </div>
   <main class="main-content">
   <div class="hide-on-small">
     <div class="toc">
@@ -1407,7 +1426,7 @@ m是光子运动质量，C是矢量光速。光子静止动量和静止质量都
       </ul>
     </div>
   </footer>
-  
+  <script src="pagejs.js"></script>
 <script>
   
 document.getElementById('toggle-toc').addEventListener('click', function () {
