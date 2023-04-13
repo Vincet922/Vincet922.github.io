@@ -124,3 +124,27 @@ font-size: 2.3rem;
 }
 }  
 
+@media (max-width: 480px) {
+  .full-screen-section img {
+  width: 300%;
+}
+
+  .section-text h2{
+	  font-size: 200%;
+	  margin-top:20px;
+	  margin-bottom:20px
+  }
+  .section-text h3 {
+	font-size: 140%;
+  }
+  
+.section-text2 h3 {
+    font-size: 1.5rem;
+
+}
+.section-text2 h2 {
+font-size: 2.1rem;
+	  margin-top:25px;
+	  margin-bottom:25px;
+}
+}
