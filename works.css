@@ -93,6 +93,12 @@
 }
 }
 
+@media (max-width: 480px) {
+.product {
+	width:50%;
+	left:20%;
+}
+
 .buyButton:hover + .tooltip {
   opacity: 1;
   visibility: visible;
