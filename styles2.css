@@ -53,11 +53,9 @@
   color: white; /* Adjust the color to your preference */
   text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
 }
-.section-text2 h2 {
+#mm {
   font-size: 3.8rem;
    margin-top:20px;
-     \\
-	 border-radius:10%;
   font-weight: bold;
   color: white; /* Adjust the color to your preference */
 text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
