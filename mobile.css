@@ -37,6 +37,8 @@
   padding: 10px 0;
   text-decoration: none;
   color: #fff;
+    width: 90%;
+  right: 5%;
 }
 
 .close-btn {
@@ -110,11 +112,7 @@ padding-right:40px;
     font-size: 1.6rem;
 
 }
-.section-text2 h2 {
-font-size: 2.3rem;
-	  margin-top:25px;
-	  margin-bottom:25px
-}
+
 
 
 .down-arrow {
@@ -130,9 +128,11 @@ font-size: 2.3rem;
 }
 
   .section-text h2{
-	  font-size: 240%;
+	  font-size: 300%;
 	  margin-top:20px;
-	  margin-bottom:20px
+	  margin-bottom:30px;
+	  margin-left:-30px;
+		margin-right:-20px;
   }
   .section-text h3 {
 	font-size: 140%;
@@ -148,5 +148,12 @@ font-size: 40px;
 }
 .uftpic{
   width: 95%;
+}
+#mm {
+font-size: 350%;
+margin-left:-70px;
+margin-right:-70px;
+	margin-top:20px;
+	margin-bottom:20px
 }
 }
