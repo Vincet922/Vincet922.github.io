@@ -13,6 +13,7 @@
 <style>
 body, html {
   margin-top: 0px;
+  background-color:black;
 }
 
 .fixed-menu {
@@ -86,44 +87,66 @@ top: 5%;
   </div>
 
   <main>
-    <section class="full-screen-section">
-      <img src="mj6opt.jpeg" alt="Image 1" loading="lazy" sizes="(max-width: 480px) 100vw, (max-width: 800px) 50vw, 33vw">
-      <div class="section-text2">
-        <h3>统一场论动量方程</h3>
-		<div id="mm">P = m(C-V)</div>
-        <a href="biography.html">了解作者</a>
+  <section class="full-screen-section">
+    <img src="mj6opt.jpeg" alt="Image 1" loading="lazy" sizes="(max-width: 480px) 100vw, (max-width: 800px) 50vw, 33vw">
+    <div class="carousel">
+      <div class="carousel-slide active">
+        <div class="section-text2">
+          <h3>统一场论动量方程</h3>
+          <div id="mm">P = m(C-V)</div>
+		  <a href="biography.html">了解作者</a>
+        </div>
       </div>
-      <div class="navigation-buttons">
-        <a href="overview.html" style="text-decoration:none;"><button class="prev">阅读统一场论</button></a>
-        <a href="works.html" style="text-decoration:none;"><button class="next">购买张祥前书籍</button></a>
+      <div class="carousel-slide">
+        <div class="section-text">
+          <h3>宇宙四种基本力统一方程</h3>
+          <h2>F = Cdm/dt - Vdm/dt + mdC/dt - mdV/dt</h2>
+		  <a href="biography.html">了解作者</a>
+        </div>
       </div>
-	  <div class="down-arrow"></div>
-    </section>
+      <div class="carousel-slide">
+        <div class="section-text3">
+          <h3>时空同一化方程</h3>
+          <h2 id="toy">R(t) = Ct = xi+ yj + zk</h2>
+		  <a href="biography.html">了解作者</a>
+        </div>
+      </div>
+	  
+    </div>
+	<div class="dots-description">点击圆点以切换公式</div>
+	<div class="dots-description2">快速向左滑动方程以切换</div>
+    <div class="dots">
+      <span class="dot active" onclick="changeSlide(0)"></span>
+      <span class="dot" onclick="changeSlide(1)"></span>
+      <span class="dot" onclick="changeSlide(2)"></span>
+    </div>
+    <div class="navigation-buttons">
+      <a href="overview.html" style="text-decoration:none;"><button class="prev">阅读统一场论</button></a>
+      <a href="works.html" style="text-decoration:none;"><button class="next">购买张祥前书籍</button></a>
+    </div>
+  </section>
+  <h2 style="color:white">空间的螺旋运动</h2>
     <section class="full-screen-section">
-      <img src="mj5opt.jpeg" alt="Image 2" loading="lazy" sizes="(max-width: 480px) 100vw, (max-width: 800px) 50vw, 33vw">
+      <video id="video1" width="105%" height="105%" controls>
+  <source src="video2.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+      <video id="video2" width="105%" height="105%" controls>
+  <source src="video2-2.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
       <div class="section-text">
-        <h3>宇宙四种基本力统一方程</h3>
-		<h2>F = Cdm/dt - Vdm/dt + mdC/dt - mdV/dt</h2>
-        <a href="biography.html">了解作者</a>
       </div>
       <div class="navigation-buttons">
-        <a href="overview.html" style="text-decoration:none;"><button class="prev">阅读统一场论</button></a>
-        <a href="works.html" style="text-decoration:none;"><button class="next">购买张祥前书籍</button></a>
-      </div>
-	  <div class="down-arrow"></div>
-    </section>
-    <section class="full-screen-section">
-      <img src="mj4opt.jpeg" alt="Image 3" loading="lazy" sizes="(max-width: 480px) 100vw, (max-width: 800px) 50vw, 33vw">
-      <div class="section-text">
-        <h3>时空同一化方程</h3>
-		<h2>R(t) = Ct = xi+ yj + zk</h2>
-        <a href="biography.html">了解作者</a>
-      </div>
-      <div class="navigation-buttons">
-        <a href="overview.html" style="text-decoration:none;"><button class="prev">阅读统一场论</button></a>
-        <a href="works.html" style="text-decoration:none;"><button class="next">购买张祥前书籍</button></a>
+
       </div>
     </section>
+          <h2 style="color:white">张祥前在纽约时代广场</h2>
+            <video id="video3" controls>
+  <source  src="video4.mov" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+      </div>
   </main>
 
   <footer>
@@ -135,5 +158,72 @@ top: 5%;
   </footer>
 
   <script src="pagejs.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+<script>
+function changeSlide(slideIndex) {
+  const slides = document.querySelectorAll('.carousel-slide');
+  const dots = document.querySelectorAll('.dot');
+
+  slides.forEach((slide, index) => {
+    slide.style.display = 'none';
+    dots[index].classList.remove('active');
+  });
+
+  slides[slideIndex].style.display = 'block';
+  dots[slideIndex].classList.add('active');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const slides = document.querySelectorAll('.carousel-slide');
+  const dots = document.querySelectorAll('.dot');
+  let currentSlideIndex = 0;
+
+  function nextSlide() {
+    currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+    changeSlide(currentSlideIndex);
+  }
+
+   function previousSlide() {
+    currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
+    changeSlide(currentSlideIndex);
+  }
+
+  document.querySelector('.next').addEventListener('click', nextSlide);
+  document.querySelector('.prev').addEventListener('click', previousSlide);
+});
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const slides = document.querySelectorAll('.carousel-slide');
+  const dots = document.querySelectorAll('.dot');
+  let currentSlideIndex = 0;
+
+  function nextSlide() {
+    currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+    changeSlide(currentSlideIndex);
+  }
+
+  function previousSlide() {
+    currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
+    changeSlide(currentSlideIndex);
+  }
+
+  document.querySelector('.next').addEventListener('click', nextSlide);
+  document.querySelector('.prev').addEventListener('click', previousSlide);
+
+  const carousel = document.querySelector('.carousel');
+  const hammerCarousel = new Hammer(carousel);
+
+  hammerCarousel.on('swipeleft', () => {
+    nextSlide();
+  });
+
+  hammerCarousel.on('swiperight', () => {
+    previousSlide();
+  });
+});
+
+</script>
 </body>
 </html>
