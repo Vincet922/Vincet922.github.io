@@ -20,7 +20,7 @@
   width: 100%;
   overflow: hidden;
   z-index: 100;
-    display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -305,3 +305,7 @@ margin:5%;
   font-size: 48px;
   color: #fff;
 }
+
+  #mj{
+	  font-size: 2rem;
+  }
