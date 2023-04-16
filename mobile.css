@@ -60,6 +60,22 @@
     display: none;
   }
 
+  .dots-description, .dots {
+    display: none;
+  }
+.dots-description2{
+  display: flex;
+   position: absolute;
+  justify-content: center;
+  font-size: 14px;
+  margin-top:60%;
+  color: white;
+ }
+ 
+ .section-text a {
+	 position: absolute;
+	 top:60%;
+}
   .hamburger {
     display: block;
 	position: fixed;
@@ -100,19 +116,43 @@ padding-right:40px;
 
 }
   .section-text h2{
-	  font-size: 230%;
-	  margin-top:40px;
-	  margin-bottom:30px
+	  font-size: 260%;
+	  margin-top:20px;
+	  margin-bottom:30px;
+	  	  display:flex;
+	  font-size: 250%;
+	  
+	  margin-bottom:30px;
+margin-left:-60%;
+margin-right:0;
+margin-bottom:500%;
   }
   .section-text h3 {
+	  margin-top:10%;
 	font-size: 160%;
+	margin-left:-130%;
+margin-right:-70%;
   }
   
 .section-text2 h3 {
     font-size: 1.6rem;
 
 }
+.section-text3 h3{
+	font-size: 160%;
+ margin-top:-130%;
+}
 
+#toy{
+	font-size: 310%;
+margin-left:-140%;
+margin-right:-140%;
+	margin-bottom:20px;
+	 left: 60%;
+	text-align:center;
+	
+	
+}
 
 
 .down-arrow {
@@ -124,39 +164,43 @@ padding-right:40px;
 
 @media (max-width: 480px) {
   .full-screen-section img {
-  width: 360%;
-}
-
-  .section-text h2{
-	  font-size: 300%;
-	  margin-top:20px;
-	  margin-bottom:30px;
-	  margin-left:-30px;
-		margin-right:-20px;
+    width: 360%;
   }
-  .section-text h3 {
-	font-size: 140%;
+  .navigation-buttons {
+    margin-bottom: -20%;
   }
-  
-.section-text2 h3 {
+  .navigation-buttons button {
+    margin-bottom: 20px;
+  }
+  .section-text {
+    top: 50%;
+    transform: translate(-14%, -20%);
+    color: white;
+  }
+  .section-text2 h3 {
     font-size: 1.5rem;
+    margin-left: -100px;
+    margin-right: -100px;
+    margin-top: -120%;
+  }
+  .uftpic {
+    width: 95%;
+  }
+  #mm {
+    font-size: 350%;
+    margin-left: -200%;
+    margin-right: -200%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #video1 {
+    display: none;
+  }
+  #video2{
+    display: flex;
+  }
+  #video3 {
+    width: 100%;
+  }
+}
 
-}
-.section-text2 h2 {
-font-size: 40px;
-
-}
-.uftpic{
-  width: 95%;
-}
-.section-text2{
-top:35%;
-}	
-#mm {
-font-size: 350%;
-margin-left:-70px;
-margin-right:-70px;
-	margin-top:20px;
-	margin-bottom:20px
-}
-}
