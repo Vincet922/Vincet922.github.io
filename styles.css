@@ -71,6 +71,8 @@ nav {
   transform: translate(-50%, -50%);
     margin: 0;
     padding: 0;
+margin-left:0px;
+margin-right:-400px;
 }
 .nav-menu li {
   position: relative;
